@@ -1,42 +1,30 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>ExOne</title>
-
+	<title>bai 2 buoi 2</title>
 </head>
 <body>
-	<h1>Thanh Toán</h1>
-
-	  <label for="name"> Tên đầy đủ</label>
-    <input type="name" name="name"  placeholder="Nhập tên đầy đủ người mưa hàng" size="50"><br><br>
-
-    <label for="password"> Passwword</label>
-    <input type="password" name="name" placeholder="Nhập password"><br><br>
-
-    <label for="email">Email</label>
-    <input type="email" name="email" placeholder="Nhập email"><br><br>
-
-    <label for="ngaysinh">Ngày sinh</label>
-    <input type="date" name="ngaysinh"placeholder="Ngày sinh"><br><br>
-
-    <label for=" mathangmua">Mặt hàng mua</label>
-    <input list="mathangmua" name="mathangmua">
-
-    <datalist id="mathangmua">
-       <option value="Shoes">
-       <option value="Socks">
-       <option value="Shirt">
-       <option value="Sandals">
-       <option value="Trousers">
-    </datalist><br><br>
-    
-    <label for="soluongmua">Số lượng mua</label>
-    <input type="Number" name="soluongmua" max="5" min="1"><br><br>
-
-    <label for="bankinhvanchuyen">Bán kính vận chuyển </label>
-    <input type="range" name="bankinhvanchuyen" min="10" max="20"><br><br>
-
-    <button> Đăng kí </button>
-    
+	<h1><font color= #993300> A Simple Form </font></h1>
+	<h2><font color= red> 	Form fundamental </font></h2>
+	<form action="/action_page.php">
+		<fieldset>
+			<legend>Customer info</legend>
+		<p>Name:<input type="text" name="Tên"size= "50" placeholder="Enter your name"autofocus/></p>
+		<p>Telephone:<input type="number" name="telephone"size= "50"placeholder="Patterm: 123-456-789"></p>
+		<p>E-mail address: <input type="text" name="emai" size="50"placeholder="Enter your email address"><p>
+			<p>Gender:<input type="radio" name="gender" value="Male">Nam
+			<input type="radio" name="gender" value="female">Nữ</p>
+		</fieldset>
+		<fieldset>
+			<legend>Books</legend>
+			<p>Hobbies:<input type="checkbox" name="Basketball" value="Basketball">Basketball
+			<input type="checkbox" name="Foodball" value="Foodball">Fooball
+			<input type="checkbox" name="Badminton" value="Badminton">Badminton</p>
+		<p>Name:<input type="text" name="tên"> 
+		Quantity (Maximum 5): <input type="number" name="number" max="5" min="1"></p>
+		<p><input type="submit" value="submit">
+		<input type="reset" value="reset"></p>
+	    </fieldset>
+	</form>
 </body>
 </html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>trang chủ</title>
+	<style type="text/css">
+		body { height: 100%;
+			width: 100%;
+			background-image: url('images/backgroud.jpg');
+			background-repeat: no-repeat;
+			background-size: 100% 100%;
+			background-attachment: fixed
+		}
+		.content{
+			width: 80%;
+			background-color: white;
+			margin-left: 10%;
+			margin-top: 10%;
+			padding-top: 5%;
+			padding-bottom: 5%;
+			padding-left: 5%;
+	
+		}
+		.text-center{
+			text-align: center;
+		}
+		.button{
+			padding: 10px;
+			font-weight: bolder;
+			font-size: 20px
+		}
+		.yes-btn{
+			position: absolute;
+			top: 40%; /* tu tren xuong 40% so voi khung man hinh*/
+			left: 45%;
+			background-color: #00FF00;
+		}
+		.no-btn{
+			position: absolute;
+			top: 40%;
+			left: 60%;
+			background-color: red;
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<header></header>
+		<div class="content">
+			<h1 class="text-center">Làm lão bà cho ta nhé?</h1>
+			<a href ="secsion.html"><button class="button yes-btn"> Oki </button></a>
+			<button id= "ignore" onmouseover ="changeLocation()"class="button no-btn"> Méo </button>
+		</div>
+		<footer></footer>
+
+		
+	</div>
+	<script type="text/javascript">
+		function changeLocation() {
+				var randomNumberleft = getRandomInt(50, 80);
+				var randomNumbertop = getRandomInt(40,60);
+			document.getElementById('ignore').style.left = randomNumberleft+'%';
+			document.getElementById('ignore').style.top = randomNumbertop+'%';
+		}
+		
+		function getRandomInt(min, max) {
+			min = Math.ceil(min);
+			max = Math.floor(max);
+			return Math.floor(Math.random() *(max - min) + min);
+		}
+	</script>
+</body>
+</html>
